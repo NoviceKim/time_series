@@ -149,6 +149,7 @@ plt.show()
 
 </details>
 
+
 <img src='./images/s6.png'>
 
 <br>
@@ -171,19 +172,32 @@ plt.show()
 
 <br>
 
-그 다음, 금과 은 ETF의 수익률 분포를 시각화했습니다.
-수익률 산출 과정에서 로그를 취했기 때문에 분포가 대칭을 띄는 것을 볼 수 있었습니다.
+그 다음, 로그를 취하기 전후의 금과 은 ETF의 수익률 분포를 시각화했습니다.
+로그를 취하지 않았어도 분포가 대칭을 띄는 것을 볼 수 있었지만,  
+로그를 취함으로써 분포를 더 안정적인 형태로 만들어주었습니다.
 
 <details>
 <summary>코드</summary>
 
 ```
+# 로그를 취하지 않았을 때의 금과 은 ETF의 수익률 분포를 히스토그램으로 출력
+np.exp(rate_f_df).hist(figsize=(8, 4), bins=50)
+plt.show()
+
 # 금과 은 ETF의 수익률 분포를 히스토그램으로 출력
 rate_f_df.hist(figsize=(8, 4), bins=50)
 plt.show()
 ```
 
 </details>
+
+##### 로그 적용 전
+
+<img src='./images/s36.png'>
+
+<br>
+
+##### 로그 적용 후
 
 <img src='./images/s8.png'>
 
@@ -984,9 +998,13 @@ plt.show()
 
 <br>
 
+##### 요일 별 변동성
+
 <img src='./images/s34.png'>
 
 <br>
+
+##### 주기 별 변동성
 
 <img src='./images/s35.png'>
 
