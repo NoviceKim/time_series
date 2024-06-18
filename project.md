@@ -150,6 +150,8 @@ plt.show()
 </details>
 
 
+<img src='./images/s6.png'>
+
 <br>
 
 그 다음에는 연율화(연간 수익률)를 산출했습니다.
