@@ -40,6 +40,8 @@ f_df
 
 이후 각 종목의 시간에 따른 주가 변화 및 변화량, 변화율을 시각화했습니다.
 
+##### 주가 변화
+
 <details>
 <summary>코드</summary>
 
@@ -57,6 +59,8 @@ plt.show()
 
 <br>
 
+##### 주가 변화량
+
 <details>
 <summary>코드</summary>
 
@@ -71,6 +75,8 @@ plt.show()
 <img src='./images/s3.png'>
 
 <br>
+
+##### 주가 변화율
 
 <details>
 <summary>코드</summary>
@@ -184,7 +190,7 @@ plt.show()
 월간 수익률의 경우, 매 달의 마지막 시점에서 resample 해주었기 때문에
 그래프가 일간 수익률에 비해 smoothing 된 것을 볼 수 있습니다.
 
-### 일간 수익률
+##### 일간 수익률
 
 <details>
 <summary>코드</summary>
@@ -698,7 +704,8 @@ print(f'MAPE (%): {MAPE(y_test, p_list):.4f}')
 <img src='./images/s26.png'>
 
 #### 🚩 ARIMA 모델 예측 결과
-- ARIMA 모델로 올해 초부터의 은 ETF 가격을 예측한 결과, 실제 주가 그래프와 약 1.5%의 오차를 보였t습니다. 
+- ARIMA 모델로 올해 초부터의 은 ETF 가격을 예측한 결과, 실제 주가 그래프에 대하여 약 1.5%의 오차를 보였습니다.
+- 이에 따라 ARIMA 모델의 정확도가 매우 높았다고 할 수 있습니다.
 
 ---
 
