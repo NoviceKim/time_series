@@ -149,7 +149,6 @@ plt.show()
 
 </details>
 
-<img src='./images/s6.png'>
 
 <br>
 
