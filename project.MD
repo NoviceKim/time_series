@@ -1,10 +1,13 @@
 ## 🩶 시계열 데이터 프로젝트 - 은 ETF 가격 예측
 
-<img src='./images/silver.jpg' width='700px'>
+<img src='./images/silver.jpg' width='600px'>
 
 
 
 - 은 ETF 중 시장 규모가 가장 큰 BlackRock 주식회사의 iShares Silver Trust(SLV)의 향후 1년 간의 주가 예측
+
+<img src='./images/silver.jpg' width='600px'>
+
 - SLV의 주가 단위는 달러($)이며, 은 1온스(약 28g)의 가격을 기준으로 함
 - 비슷한 성격을 가진 종목인 금 ETF(GLD)와의 연관성도 분석
 
