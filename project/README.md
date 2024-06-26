@@ -1,15 +1,21 @@
 ## 🩶 시계열 데이터 프로젝트 - 은 ETF 가격 예측
 
-<img src='./images/silver.jpg' width='600px'>
+<img src='../images/silver.jpg' width='600px'>
+<sub>츨처: https://stock.adobe.com/search?k=silver+ingot</sub>
 
-
+---
 
 - 은 ETF 중 시장 규모가 가장 큰 BlackRock 주식회사의 iShares Silver Trust(SLV)의 향후 1년 간의 주가 예측
 
-<img src='./images/blackrock.jpg' width='600px'>
+<br>
+
+<img src='../images/blackrock.jpg' width='600px'>
+<p><sub>츨처: https://blog.millionero.com/news/blackrock-files-for-bitcoin-spot-etf-in-the-us</sub></p>
 
 - SLV의 주가 단위는 달러($, 한화 약 1,380원)이며, 은 1온스(약 28g)의 가격을 기준으로 함
 - 금 ETF(GLD) 주가와의 연관성도 분석
+
+<br>
 
 ---
 
@@ -36,7 +42,7 @@ f_df
 </details>
 
 
-<img src='./images/s1.png'>
+<img src='../images/s1.png'>
 
 <br>
 
@@ -57,7 +63,7 @@ plt.show()
 
 </details>
 
-<img src='./images/s2.png'>
+<img src='../images/s2.png'>
 
 <br>
 
@@ -74,7 +80,7 @@ plt.show()
 
 </details>
 
-<img src='./images/s3.png'>
+<img src='../images/s3.png'>
 
 <br>
 
@@ -91,7 +97,7 @@ plt.show()
 
 </details>
 
-<img src='./images/s4.png'>
+<img src='../images/s4.png'>
 
 <br>
 
@@ -100,11 +106,11 @@ plt.show()
   이는 COVID-19 팬데믹의 영향으로, 그래프에 나타났듯이 초기에는 불확실성과 공포로 인해 은 시세가 급락했지만,  
   이후 안전자산에 대한 수요 증가 및 중앙 은행의 대규모 통화 완화 정책 등으로 다시 시세가 급증했습니다.
 
-<img src='./images/corona.jpg' width='500px'>
-
+<img src='../images/corona.jpg' width='500px'>
+<p><sub>츨처: https://www.nfid.org/infectious-disease/coronaviruses</sub></p>
+  
 - 그 외 시간대에서 금과 은 ETF의 주가는 대부분의 시간대에서 비슷한 양상을 보이는 것을 알 수 있었습니다.
-- 변화량 그래프의 형태로 보아, 금과 은 ETF 모두 분산이 일정하지 않습니다. 
-
+- 변화량 그래프의 형태로 보아, 금과 은 ETF 모두 분산이 일정하지 않습니다.
 
 ---
 
@@ -132,7 +138,7 @@ rate_f_df
 
 </details>
 
-<img src='./images/s5.png'>
+<img src='../images/s5.png'>
 
 <br>
 
@@ -150,11 +156,11 @@ plt.show()
 </details>
 
 
-<img src='./images/s6.png'>
+<img src='../images/s6.png'>
 
 <br>
 
-그 다음에는 연율화(연간 수익률)를 산출했습니다.
+그 다음에는 연율화(연간 수익률)를 산출했습니다.  
 그 결과는 아래와 같습니다.
 
 <details>
@@ -168,11 +174,11 @@ plt.show()
 
 </details>
 
-<img src='./images/s7.png'>
+<img src='../images/s7.png'>
 
 <br>
 
-그 다음, 로그를 취하기 전후의 금과 은 ETF의 수익률 분포를 시각화했습니다.
+그 다음, 로그를 취하기 전후의 금과 은 ETF의 수익률 분포를 시각화했습니다.  
 로그를 취하지 않았어도 분포가 대칭을 띄는 것을 볼 수 있었지만,  
 로그를 취함으로써 분포를 더 안정적인 형태로 만들어주었습니다.
 
@@ -193,20 +199,20 @@ plt.show()
 
 ##### 로그 적용 전
 
-<img src='./images/s36.png'>
+<img src='../images/s36.png'>
 
 <br>
 
 ##### 로그 적용 후
 
-<img src='./images/s8.png'>
+<img src='../images/s8.png'>
 
 <br>
 
-마지막으로 일간 수익률과 월간 수익률을 구했습니다.
+마지막으로 일간 수익률과 월간 수익률을 구했습니다.  
 이 때는 로그를 취한 수익률에 다시 지수를 취함으로써 단순 수익률로 변환해주었습니다.
 
-월간 수익률의 경우, 매 달의 마지막 시점에서 resample 해주었기 때문에
+월간 수익률의 경우, 매 달의 마지막 시점에서 resample 해주었기 때문에  
 그래프가 일간 수익률에 비해 smoothing 된 것을 볼 수 있습니다.
 
 ##### 일간 수익률
@@ -223,7 +229,7 @@ plt.show()
 
 </details>
 
-<img src='./images/s9.png'>
+<img src='../images/s9.png'>
 
 <br>
 
@@ -241,7 +247,7 @@ plt.show()
 
 </details>
 
-<img src='./images/s10.png'>
+<img src='../images/s10.png'>
 
 <br>
 
@@ -256,7 +262,7 @@ plt.show()
 
 ### 💰 금, 은 ETF 가격의 상관관계 분석
 
-금과 은 ETF 주가 간 상관관계를 분석했습니다.
+금과 은 ETF 주가 간 상관관계를 분석했습니다.  
 이 때는 VIF(분산 팽창 요인) Score를 사용했습니다.
 
 <details>
@@ -280,7 +286,7 @@ get_vif(rate_f_df)
 
 </details>
 
-<img src='./images/s11.png'>
+<img src='../images/s11.png'>
 
 <br>
 
@@ -299,7 +305,7 @@ get_vif(rate_f_df)
 ### 🩶 은 ETF 주가 데이터 분석
 - 여러 지표를 시각화하며 은 ETF 주가 분석
 
-머신 러닝 모델로 학습하기 이전에 은 ETF 주가에 대한 데이터 분석을 진행했습니다.
+머신 러닝 모델로 학습하기 이전에 은 ETF 주가에 대한 데이터 분석을 진행했습니다.  
 이를 위해 yfinance에서 은 ETF 주가(SLV) 데이터만 가져온 뒤, 데이터프레임으로 변환해주었습니다.
 
 <details>
@@ -319,7 +325,7 @@ slv_df
 
 </details>
 
-<img src='./images/s13.png'>
+<img src='../images/s13.png'>
 
 <br>
 
@@ -341,11 +347,11 @@ slv_df.dropna()
 
 </details>
 
-<img src='./images/s14.png'>
+<img src='../images/s14.png'>
 
 <br>
 
-이후 최근 2년 간의 은 ETF의 주가와 함께 위에서 추가한 컬럼들의 그래프를 시각화해주었습니다.
+이후 최근 2년 간의 은 ETF의 주가와 함께 위에서 추가한 컬럼들의 그래프를 시각화해주었습니다.  
 이 때 1년 영업일을 252일로 정의했기 때문에, 최근 2년 간의 데이터를 가져오기 위해 504 영업일 간의 데이터를 사용했습니다.
 
 <details>
@@ -363,7 +369,7 @@ plt.show()
 
 </details>
 
-<img src='./images/s15.png'>
+<img src='../images/s15.png'>
 
 <br>
 
@@ -387,11 +393,11 @@ slv_df[['SLV', 'SMA1', 'SMA2']].tail()
 
 </details>
 
-<img src='./images/s16.png'>
+<img src='../images/s16.png'>
 
 <br>
 
-그리고 일간 주가와 월 평균 주가, 연 평균 주가를 시각화해주었습니다.
+그리고 일간 주가와 월 평균 주가, 연 평균 주가를 시각화해주었습니다.  
 마찬가지로 최근 2년간의 그래프만 시각화해주었습니다.
 
 <details>
@@ -406,7 +412,7 @@ plt.show()
 
 </details>
 
-<img src='./images/s17.png'>
+<img src='../images/s17.png'>
 
 <br>
 
@@ -437,13 +443,13 @@ plt.show()
 
 </details>
 
-<img src='./images/s18.png'>
+<img src='../images/s18.png'>
 
 <br>
 
 월 평균 주가와 연 평균 주가 그래프가 겹쳐지는 지점들 중  
 월 평균이 높아지는 지점은 **골든 크로스**, 연 평균이 높아지는 지점은 **데드 크로스**라고 합니다.
-
+  
 골든 크로스 시점 이후에는 매수, 데드 크로스 시점 이후에는 매도하는 것이 권장됩니다.
 
 ---
@@ -478,7 +484,7 @@ plt.show()
 
 </details>
 
-<img src='./images/s19.png'>
+<img src='../images/s19.png'>
 
 <br>
 
@@ -487,9 +493,8 @@ plt.show()
 - 시계열 데이터를 분석하기 위해서는 정상성을 만들어야 하며, 이를 위해 차분을 수행
 - 서로 다른 3가지 알고리즘으로 최적의 차분 수를 산출하고, 아래의 auto_arima()에 할당
 
-서로 다른 3가지 알고리즘으로 은 ETF 주가 데이터에 최적 차분 수를 구하고,  
-그 중 최대값을 구해주었습니다.
-
+서로 다른 3가지 알고리즘으로 은 ETF 주가 데이터에 최적 차분 수를 구하고, 그 중 최대값을 구해주었습니다.
+  
 그 결과, 최적의 차분 수는 1이라는 결과가 나왔습니다.
 
 <details>
@@ -513,7 +518,7 @@ print(f'd = {n_diffs}')
 
 <br>
 
-<img src='./images/s20.png'>
+<img src='../images/s20.png'>
 
 ---
 
@@ -548,7 +553,7 @@ plt.show()
 
 </details>
 
-<img src='./images/s21.png'>
+<img src='../images/s21.png'>
 
 <br>
 
@@ -559,9 +564,9 @@ plt.show()
 
 <br>
 
-auto_arima()로 하이퍼 파라미터 최적화 및 모델 튜닝을 진행했습니다.
+auto_arima()로 하이퍼 파라미터 최적화 및 모델 튜닝을 진행했습니다.  
 d에는 위 과정으로 구한 최적 차분 수인 1을, p와 q는 0 ~ 10차 사이에서 최적의 계수를 찾도록 했습니다.
-
+  
 여기서 p는 AR(자기회귀) 모델의 차수를, q는 MA(이동 평균)의 차수를 의미합니다.
 
 <details>
@@ -584,7 +589,7 @@ model = pm.auto_arima(y=y_train,
 
 </details>
 
-<img src='./images/s22.png'>
+<img src='../images/s22.png'>
 
 <br>
 
@@ -606,7 +611,7 @@ print(model.summary())
 
 </details>
 
-<img src='./images/s23.png'>
+<img src='../images/s23.png'>
 
 <br>
 
@@ -625,7 +630,7 @@ plt.show()
 
 </details>
 
-<img src='./images/s24.png'>
+<img src='../images/s24.png'>
 
 <br>
 
@@ -706,7 +711,7 @@ plt.show()
 
 </details>
 
-<img src='./images/s25.png'>
+<img src='../images/s25.png'>
 
 <br>
 
@@ -729,7 +734,7 @@ print(f'MAPE (%): {MAPE(y_test, p_list):.4f}')
 
 </details>
 
-<img src='./images/s26.png'>
+<img src='../images/s26.png'>
 
 #### 🚩 ARIMA 모델 예측 결과
 - ARIMA 모델로 올해 초부터의 은 ETF 가격을 예측한 결과, 실제 주가 그래프에 대하여 약 1.5%의 오차를 보였습니다.
@@ -747,7 +752,7 @@ print(f'MAPE (%): {MAPE(y_test, p_list):.4f}')
 
 우선 은 ETF 주가 데이터가 담긴 데이터프레임을 가져왔습니다.
 
-<img src='./images/s27.png'>
+<img src='../images/s27.png'>
 
 <br>
 
@@ -782,7 +787,7 @@ prop_s_df
 
 </details>
 
-<img src='./images/s28.png'>
+<img src='../images/s28.png'>
 
 <br>
 
@@ -864,7 +869,7 @@ tuning_result.sort_values(by='mape')
 
 </details>
 
-<img src='./images/s29.png'>
+<img src='../images/s29.png'>
 
 <br>
 
@@ -925,13 +930,13 @@ plt.show()
 
 </details>
 
-<img src='./images/s30.png'>
+<img src='../images/s30.png'>
 
 <br>
 
 하지만 시각화 결과 위와 같이 예측값이 큰 편차를 보이는 현상을 확인했으며,  
 이는 seasonality_mode를 <code>multiplicative</code>로 설정하여 발생한 문제라고 생각했습니다.
-
+  
 따라서 교차 검증 결과 중 additive가 포함된 하이퍼 파라미터 조합에서 오차가 가장 적었던  
 changepoint_prior_scale=0.05, seasonality_prior_scale=0.05, seasonality_mode='additive'  
 로 Prophet 모델을 다시 튜닝한 뒤, fit을 진행하고 향후 1년 간의 주가를 다시 predict했습니다.
@@ -955,7 +960,7 @@ model.fit(prop_s_df)
 
 그 결과는 다음과 같았습니다.
 
-<img src='./images/s31.png'>
+<img src='../images/s31.png'>
 
 <br>
 
@@ -972,7 +977,7 @@ plt.show()
 
 </details>
 
-<img src='./images/s32.png'>
+<img src='../images/s32.png'>
 
 <br>
 
@@ -994,19 +999,19 @@ plt.show()
 
 ##### 시간대 별 변동성
 
-<img src='./images/s33.png'>
+<img src='../images/s33.png'>
 
 <br>
 
 ##### 요일 별 변동성
 
-<img src='./images/s34.png'>
+<img src='../images/s34.png'>
 
 <br>
 
 ##### 주기 별 변동성
 
-<img src='./images/s35.png'>
+<img src='../images/s35.png'>
 
 <br>
 
@@ -1023,5 +1028,3 @@ plt.show()
 ---
 
 - 종합해 봤을 때, 이 모델은 앞으로의 은 ETF 시세를 긍정적인 전망으로 보고 있다고 할 수 있습니다.
-- 다만, 실제 데이터가 신뢰 구간에서 벗어난 지점이 일부 확인되었기 때문에,  
-예측 결과 역시 신뢰도가 높지는 않다고 할 수 있습니다.
