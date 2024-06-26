@@ -596,7 +596,7 @@ model = pm.auto_arima(y=y_train,
 그 결과, 위 결과에 나온 최적의 파라미터로 모델이 튜닝되었으며,  
 이 모델에 fit을 진행해 주었습니다.
 
-그 후, <code>model.summary</code>를 통해 모델의 성능 지표를 출력했고,
+그 후, <code>model.summary</code>를 통해 모델의 성능 지표를 출력했고,  
 <code>model.plot_diagnostics</code>로 차분 이후의 변화량과 데이터 분포 및 ACF를 시각화해보았습니다.
 
 ##### summary
